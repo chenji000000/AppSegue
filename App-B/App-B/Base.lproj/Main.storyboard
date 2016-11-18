@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cmg-3o-yW3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App-B主页面-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是应用App-B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebp-nt-i5Z">
+                                <rect key="frame" x="128" y="204" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ebp-nt-i5Z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="Kmo-KM-ioA"/>
+                            <constraint firstItem="Ebp-nt-i5Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RaC-RV-ky2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="App-B主页面" id="TrG-i7-mhe"/>
+                    <connections>
+                        <segue destination="FL8-cU-EFF" kind="push" identifier="homeToPage1" id="Lfc-Yi-tD5"/>
+                        <segue destination="XiP-A1-iVl" kind="push" identifier="homeToPage2" id="PeM-VE-3yQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="107.49625187406298"/>
+        </scene>
+        <!--Page2页面-->
+        <scene sceneID="mj3-gg-JKY">
+            <objects>
+                <viewController id="XiP-A1-iVl" customClass="Page2ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nHg-CS-GkV"/>
+                        <viewControllerLayoutGuide type="bottom" id="fhJ-hu-xsH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KWn-4Q-Y8C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是App-B的Page2页面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAA-Tv-8kQ">
+                                <rect key="frame" x="95" y="204" width="185" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xM9-ZC-vL9">
+                                <rect key="frame" x="142" y="245" width="91" height="30"/>
+                                <state key="normal" title="跳转回App-A">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBack:" destination="XiP-A1-iVl" eventType="touchUpInside" id="P5c-HI-kTp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xM9-ZC-vL9" firstAttribute="centerX" secondItem="KWn-4Q-Y8C" secondAttribute="centerX" id="I5Y-S6-RpX"/>
+                            <constraint firstItem="bAA-Tv-8kQ" firstAttribute="top" secondItem="nHg-CS-GkV" secondAttribute="bottom" constant="140" id="RMx-SR-Jgb"/>
+                            <constraint firstItem="bAA-Tv-8kQ" firstAttribute="centerX" secondItem="KWn-4Q-Y8C" secondAttribute="centerX" id="dRw-lC-Re7"/>
+                            <constraint firstItem="xM9-ZC-vL9" firstAttribute="top" secondItem="bAA-Tv-8kQ" secondAttribute="bottom" constant="20" id="oNq-NT-yB8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page2页面" id="sqc-AY-2Zv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NTc-z5-G1x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1783" y="605"/>
+        </scene>
+        <!--Page1页面-->
+        <scene sceneID="8hM-fT-du3">
+            <objects>
+                <viewController id="FL8-cU-EFF" customClass="Page1ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pqG-b5-ZpD"/>
+                        <viewControllerLayoutGuide type="bottom" id="TR4-hD-dGx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oFP-6X-USC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是App-B的Page1页面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xg5-zb-EIo">
+                                <rect key="frame" x="97" y="204" width="182" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ID-kO-Ap0">
+                                <rect key="frame" x="142" y="245" width="91" height="30"/>
+                                <state key="normal" title="跳转回App-A"/>
+                                <connections>
+                                    <action selector="goBack:" destination="FL8-cU-EFF" eventType="touchUpInside" id="fiI-XR-yCe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.71041403521987811" blue="0.13180868278308533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7ID-kO-Ap0" firstAttribute="centerX" secondItem="oFP-6X-USC" secondAttribute="centerX" id="0Xb-3n-Z72"/>
+                            <constraint firstItem="Xg5-zb-EIo" firstAttribute="top" secondItem="pqG-b5-ZpD" secondAttribute="bottom" constant="140" id="MFx-Nw-SIJ"/>
+                            <constraint firstItem="Xg5-zb-EIo" firstAttribute="centerX" secondItem="oFP-6X-USC" secondAttribute="centerX" id="XKu-PL-fHf"/>
+                            <constraint firstItem="7ID-kO-Ap0" firstAttribute="top" secondItem="Xg5-zb-EIo" secondAttribute="bottom" constant="20" id="ZcA-8R-2DY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page1页面" id="4vs-3h-tMI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LdV-kS-fdw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1711" y="-96"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7m8-pf-PSE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cmg-3o-yW3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nD7-qN-V9e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jkY-De-0H0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lP5-yD-Lyo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="-575.26236881559225"/>
+        </scene>
+    </scenes>
+</document>
